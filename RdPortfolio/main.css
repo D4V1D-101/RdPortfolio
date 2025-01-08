@@ -143,30 +143,45 @@ nav ul li a:hover {
 }
 
 .about-skills {
-  text-align: left;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
 }
 
 .skill {
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skill-title {
-  display: block;
   font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #f39c12; /* Softer yellow */
+  color: #f39c12; /* Sárga szöveg */
+  margin-bottom: 0.5rem; /* Távolság a sáv és a cím között */
 }
 
-.skill-percent {
-  float: right;
+.skillbar-container {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  flex-direction: column-reverse;
 }
 
 .skillbar {
   height: 0.4rem;
-  background: #f1c40f; /* Bright yellow */
+  background: #f1c40f; /* Élénk sárga */
+  flex-grow: 1; /* Dinamikusan nő a hely kitöltésére */
+  position: relative;
 }
 
+.skill-percent {
+  margin-left: 0.5rem; /* Távolság a sáv jobb szélétől */
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333; /* Sötét szöveg */
+}
 .about-download-btn {
   margin-top: 2rem;
   display: inline-block;
@@ -181,6 +196,8 @@ nav ul li a:hover {
 .about-download-btn:hover {
   background: #e67e22; /* Darker yellow */
 }
+
+
 
 @media screen and (max-width: 768px) {
 
@@ -258,5 +275,14 @@ nav ul li a:hover {
   .main {
     margin-top: 60px; /* Elkerülni a fedést a rögzített navigációval */
     padding: 20px;
+  }
+  .skillbar-container {
+    flex-direction: column; /* A százalék érték alulra kerül kisebb képernyőkön */
+    align-items: flex-start; /* Balra igazított */
+  }
+
+  .skill-percent {
+    margin-left: 0; /* Távolság eltávolítása kisebb képernyőn */
+    margin-top: 0.5rem; /* Távolság a sáv aljától */
   }
 }
