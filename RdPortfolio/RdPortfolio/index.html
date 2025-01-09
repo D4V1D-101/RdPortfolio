@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng|Titillium+Web|Varela+Round&display=swap" rel="stylesheet" />
+  <title>Personal Website</title>
+</head>
+
+<body>
+  <nav>
+    <div class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <img src="images/Rd.jpg" alt="Profile Picture" />
+    <p class="headname">Rigó Dávid</p>
+    <ul>
+      <li><a href="#about"> ABOUT ME </a></li>
+      <li><a href="#skills"> SKILLS </a></li>
+      <li><a href="#rate">RATE</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <main class="main">
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-title">
+          <h2 class="title">About Me</h2>
+        </div>
+        <div class="about-row">
+          <div class="about-content">
+            <p class="about-descr">I am lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <div class="about-download-btn">
+              <a href="images/CV.pdf" class="btn btn-white" download="CV.pdf">Download CV</a>
+            </div>
+          </div>
+          <h1>Most used Languages</h1>
+          <div id="skills" class="skillcontainer">
+            <div class="about-skills">
+              <div class="skill">
+                <div class="skill-title">C#</div>
+                <div class="skillbar-container">
+                  <div class="skillbar" style="width: 40%"></div>
+                  <div class="skill-percent">40%</div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-title">HTML/CSS</div>
+                <div class="skillbar-container">
+                  <div class="skillbar" style="width: 30%"></div>
+                  <div class="skill-percent">30%</div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-title">PHP</div>
+                <div class="skillbar-container">
+                  <div class="skillbar" style="width: 15%"></div>
+                  <div class="skill-percent">15%</div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill-title">JavaScript</div>
+                <div class="skillbar-container">
+                  <div class="skillbar" style="width: 15%"></div>
+                  <div class="skill-percent">15%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1>Rate My Portfolio</h1>
+      <form action="add_rate.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="rate">Rating:</label>
+        <select name="rate" id="rate" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+    <div class="contact" id="contact">
+      <h1>Contacts</h1>
+      <div class="contact-socialicon">
+        <a href="https://www.facebook.com/profile.php?id=100005632968897">
+          <img src="https://img.icons8.com/?size=100&id=Emw2SRMrwP8L&format=png&color=000000" /></a>
+        <a href="https://github.com/D4V1D-101">
+          <img src="https://img.icons8.com/?size=100&id=g7P0iny5Rros&format=png&color=000000" /></a>
+        <a href="https://www.instagram.com/d_rigooo_/">
+          <img src="https://img.icons8.com/?size=100&id=El7pTE24c3iC&format=png&color=000000" /></a>
+      </div>
+    </div>
+  </main>
+
+  <script src="js.js"></script>
+</body>
+</html>

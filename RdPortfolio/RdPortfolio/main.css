@@ -1,0 +1,327 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Varela Round", sans-serif;
+  background-color: #1a1a1a;
+}
+
+a {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f1c40f;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  color: #f39c12;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background: #2c3e50;
+  box-shadow: 9px 9px 35px -8px rgba(0, 0, 0, 0.69);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+nav.active {
+  transform: translateX(0);
+}
+
+nav img {
+  display: block;
+  margin: 30px auto 20px;
+  width: clamp(80px, 10vw, 150px);
+  height: clamp(80px, 10vw, 150px);
+  border-radius: 20%;
+}
+
+.home {
+  text-align: center;
+}
+
+.headname {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Ma Shan Zheng", cursive;
+  margin-bottom: 20px;
+  color: #f39c12;
+}
+
+.contact {
+  text-align: center;
+}
+
+.picturepfp {
+  border-radius: 20%;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  margin: 20px 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family: "Titillium Web", sans-serif;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #f39c12;
+  color: #1a1a1a;
+}
+
+.main {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1100;
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #ffffff;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.about {
+  padding: 10rem 2rem;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.about-row {
+  text-align: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.about-descr {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #b2b2b2;
+  margin: 0 auto;
+}
+
+.about-skills {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f39c12;
+  margin-bottom: 0.5rem;
+}
+
+.skillbar-container {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+.skillbar {
+  height: 0.4rem;
+  background: #f1c40f;
+  flex-grow: 1;
+  position: relative;
+}
+
+.skill-percent {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.about-download-btn {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #000000;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.about-download-btn:hover {
+  background: #ffffff;
+}
+
+form input, form select {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #000000;
+  color: #f1c40f;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background: #ffffff;
+}
+
+#ratingForm {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.contact-socialicon img {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+.contact-socialicon a {
+  margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  nav {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    left: 0;
+    background: rgba(44, 62, 80, 0.95);
+    transition: top 0.3s ease;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1100;
+    cursor: pointer;
+  }
+
+  .hamburger-menu span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #f39c12;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    padding: 20px 0;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    padding: 15px;
+    font-size: 1.4rem;
+    font-family: "Titillium Web", sans-serif;
+    color: #ffffff;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+  }
+
+  nav ul li a:hover {
+    background: #f39c12;
+    color: #1a1a1a;
+  }
+
+  .main {
+    margin-top: 60px;
+    padding: 20px;
+  }
+
+  .skillbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skill-percent {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
