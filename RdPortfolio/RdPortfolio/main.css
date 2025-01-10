@@ -147,6 +147,9 @@ nav ul li a:hover {
   flex-direction: column;
 }
 
+label{
+  color: white;
+}
 .skill {
   display: flex;
   flex-direction: column;
@@ -235,6 +238,22 @@ form input[type="submit"]:hover {
 
 .contact-socialicon a {
   margin: 5px;
+}
+.star {
+  font-size: 30px;
+  cursor: pointer;
+  color: gray;
+}
+.star.selected {
+  color: gold;
+}
+form{
+  text-align: center;
+  
+
+}
+#ratingForm{
+  background-color: #000000;
 }
 
 @media screen and (max-width: 768px) {

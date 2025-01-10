@@ -35,7 +35,16 @@
         </div>
         <div class="about-row">
           <div class="about-content">
-            <p class="about-descr">I am lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <p class="about-descr">
+              Certainly! Here's a more detailed and longer version:
+              
+              My name is Dávid, and I’m a software development student with a strong interest in technology and programming. I enjoy discovering new tools, frameworks, and languages, and I’m constantly looking for ways to improve my skills and stay up-to-date with industry trends.
+              
+              I am passionate about software development and excited about the endless possibilities that technology offers. Whether it’s creating new applications, solving complex problems, or experimenting with different programming paradigms, I am always eager to dive deeper into the world of coding.
+              
+              I plan to further my education by attending university, where I aim to build a solid foundation in computer science and software engineering. Along the way, I hope to expand my knowledge, collaborate with like-minded individuals, and contribute to projects that make a positive impact.
+              
+              In addition to my studies, I enjoy taking on personal projects that challenge my creativity and technical abilities. Whether it's developing games, working on web applications, or exploring new areas of software development, I’m always looking for opportunities to grow and innovate.</p>
             <div class="about-download-btn">
               <a href="images/CV.pdf" class="btn btn-white" download="CV.pdf">Download CV</a>
             </div>
@@ -75,27 +84,22 @@
           </div>
         </div>
       </div>
-      <h1>Rate My Portfolio</h1>
-      <form action="add_rate.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required><br>
-
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required><br>
-
-        <label for="rate">Rating:</label>
-        <select name="rate" id="rate" required>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select><br><br>
-
-        <input type="submit" value="Submit">
-      </form>
+     
     </section>
-
+    <form id="ratingForm" action="submit_rating.php" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br><br>
+      <label for="rating">Rating:</label>
+      <span class="star" data-value="1">&#9734;</span>
+      <span class="star" data-value="2">&#9734;</span>
+      <span class="star" data-value="3">&#9734;</span>
+      <span class="star" data-value="4">&#9734;</span>
+      <span class="star" data-value="5">&#9734;</span>
+      <input type="hidden" id="rating" name="rating" value="0">
+      <br><br>
+      <input type="submit" value="Submit">
+  </form>
     <div class="contact" id="contact">
       <h1>Contacts</h1>
       <div class="contact-socialicon">
